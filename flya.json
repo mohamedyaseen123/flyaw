@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3d4ced8b-0fbb-4f8e-968d-393fdc3884d8",
+		"name": "list flight",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26612576"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/FlyAway/?source=1&destination=11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"FlyAway",
+						""
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "1"
+						},
+						{
+							"key": "destination",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "booked",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9010/FlyAway/memberbookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"FlyAway",
+						"memberbookings"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "FlyAway/?source=1&destination=11"
+		},
+		{
+			"key": "endpont",
+			"value": "/FlyAway/memberbookings"
+		}
+	]
+}
